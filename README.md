@@ -1,16 +1,25 @@
-## Hi there 👋
+import turtle
 
-<!--
-**Ripal3112/ripal3112** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+def draw_heart():
+    turtle.fillcolor('red')
+    turtle.begin_fill()
+    turtle.left(140)
+    turtle.forward(224)
+    turtle.circle(-112, 200)
+    turtle.left(120)
+    turtle.circle(-112, 200)
+    turtle.forward(224)
+    turtle.end_fill()
 
-Here are some ideas to get you started:
+def write_name():
+    turtle.penup()
+    turtle.goto(-80, 95)
+    turtle.color("white")
+    turtle.pendown()
+    turtle.write("Aulia🌷🌸", font=("Arial", 32, "bold"))
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+turtle.speed(1)
+draw_heart()
+write_name()
+turtle.hideturtle()
+turtle.done()
